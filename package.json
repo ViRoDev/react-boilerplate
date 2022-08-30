@@ -1,0 +1,26 @@
+{
+  "name": "esbuild-react-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "clear": "rm public/*.js public/*.map",
+    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/bundle.js",
+    "dev": "npm run build && live-server public/"
+  },
+  "keywords": [],
+  "author": "ViRoDev",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tsc": "^2.0.4",
+    "typescript": "^4.8.2",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "esbuild": "^0.15.6"
+  }
+}
